@@ -4,7 +4,7 @@
     <a href="https://github.com/warmachine028/hr-chatbot">
         <img width="200" src="" alt="HR Chatbot">
     </a>
-    <p style="font-family: roboto, calibri; font-size:12pt; font-style:italic"> A good one liner description here </p>
+    <p style="font-family: roboto, calibri; font-size:12pt; font-style:italic"> A chatbot to resolve HR related queries of Pursuit Employees </p>
     <a src="https://github.com/warmachine028/hr-chatbot/forks">
         <img alt="GitHub forks" src="https://img.shields.io/github/forks/warmachine028/hr-chatbot">
     </a>
