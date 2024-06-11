@@ -1,6 +1,6 @@
 name: 💡 General Feature Request
 description: Have a new idea/feature for hr-chatbot? Please suggest!
-labels: ["⭐ goal: addition", "good first issue", "🤩 Up for the grab", "help wanted", "enhancement"]
+labels: ["⭐ goal: addition", "enhancement"]
 title: "[FEATURE 💡] <description>"
 body:
     - type: textarea
@@ -27,13 +27,10 @@ body:
           value: |
 
               ## **Make sure to read the [CONTRIBUTING](https://github.com/warmachine028/hr-chatbot/blob/main/CONTRIBUTING.md) and [SETUP](https://github.com/warmachine028/hr-chatbot/tree/main/rules) docs before proceeding**
-              ## Happy contributing. 💐
-              Star my other Repositories [here](https://github.com/warmachine028)
+
       validations:
           required: false
     - type: markdown
       attributes:
           value: |
               ## **Make sure to read the [CONTRIBUTING](https://github.com/warmachine028/hr-chatbot/blob/main/CONTRIBUTING.md) and [SETUP](https://github.com/warmachine028/hr-chatbot/tree/main/rules) docs before proceeding**
-              ## Happy contributing. 💐
-              Star my other Repositories [here](https://github.com/warmachine028?tab=repositories)

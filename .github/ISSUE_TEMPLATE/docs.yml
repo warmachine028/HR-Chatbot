@@ -24,8 +24,3 @@ body:
       description: Is there anything else we should know about this issue?
     validations:
       required: false
-  - type: markdown
-    attributes:
-      value: |
-        Star my other Repositories [here](https://github.com/warmachine028)
-
