@@ -48,7 +48,7 @@
 
 <div align="center">
     <a  href="https://github.com/warmachine028/hr-chatbot/graphs/contributors">
-        <img src="https://contrib.rocks/image?repo=warmachine028/hr-chatbot" />
+        <img src="https://contrib.rocks/image?repo=warmachine028/hr-chatbot" alt="" />
     </a>
 </div>
 
