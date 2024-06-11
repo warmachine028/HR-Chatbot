@@ -58,7 +58,7 @@
 
 - See [LICENSE]
 
-**Pritam, 2023**
+**Pursuit Software, 2024**
 
 ![line]
 
