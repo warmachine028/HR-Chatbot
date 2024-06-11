@@ -2,7 +2,7 @@
 
 <div align=center>
     <a href="https://github.com/warmachine028/hr-chatbot">
-        <img width="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNNMEw0gMcuUKOiT4V1EsyhDj9tv4St5BuRNfh7iV0BA&usqp=CAU&ec=48665699" alt="HR Chatbot">
+        <img width="200" src="" alt="HR Chatbot">
     </a>
     <p style="font-family: roboto, calibri; font-size:12pt; font-style:italic"> A good one liner description here </p>
     <a src="https://github.com/warmachine028/hr-chatbot/forks">
