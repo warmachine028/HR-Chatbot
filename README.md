@@ -1,4 +1,4 @@
-    updated on: 27th February 2024, Tuesday
+    updated on: 11th June 2024, Tuesday
 
 <div align=center>
     <a href="https://github.com/warmachine028/hr-chatbot">
@@ -68,4 +68,4 @@
 [line]: https://user-images.githubusercontent.com/75939390/137615281-3a875960-92cc-407f-97fe-fd2319bdb252.png
 
 [License]: https://github.com/warmachine028/hr-chatbot/blob/main/LICENSE
-<!-- 27/02/24 -->
+<!-- 11/06/24 -->
