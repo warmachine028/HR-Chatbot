@@ -82,5 +82,4 @@ jobs:
 
     # Add a step to handle the case when no Python files are detected
     - name: No Python files detected
-      if: matrix.python_exists == 'false'
       run: echo "No Python files detected, skipping CodeQL analysis."
