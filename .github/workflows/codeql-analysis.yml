@@ -11,13 +11,21 @@
 #
 name: 🕵️ CodeQL Analysis
 
+
+  
 on:
   workflow_dispatch:
   push:
     branches: [ "main" ]
+    paths-ignore: 
+      - '.github/*'
+      - '*.md'
   pull_request:
     # The branches below must be a subset of the branches above
     branches: [ "main" ]
+    paths-ignore: 
+      - '.github/*'
+      - '*.md'
 
 jobs:
   analyze:
@@ -69,5 +77,3 @@ jobs:
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
-      with:
-        paths-ignore: '.github/**'
