@@ -69,6 +69,5 @@ jobs:
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
-      paths-ignore: '.github/**'
-      # with:
-      #   paths-ignore: '.github/**'
+      with:
+        paths-ignore: '.github/**'
