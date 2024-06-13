@@ -11,8 +11,6 @@
 #
 name: 🕵️ CodeQL Analysis
 
-
-  
 on:
   workflow_dispatch:
   push:
@@ -39,7 +37,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [ 'javascript', 'python' ]
+        language: [ 'python' ]
+        include:
+          - python_exists: ${{ fromJSON('["true","false"]') }}
         # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby' ]
         # Learn more about CodeQL language support at https://aka.ms/codeql-docs/language-support
 
@@ -63,6 +63,7 @@ jobs:
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
     - name: Autobuild
+      if: matrix.python_exists == 'true'
       uses: github/codeql-action/autobuild@v3
 
     # ℹ️ Command-line programs to run using the OS shell.
@@ -76,4 +77,10 @@ jobs:
     #   ./location_of_script_within_repo/buildscript.sh
 
     - name: Perform CodeQL Analysis
+      if: matrix.python_exists == 'true'
       uses: github/codeql-action/analyze@v3
+
+    # Add a step to handle the case when no Python files are detected
+    - name: No Python files detected
+      if: matrix.python_exists == 'false'
+      run: echo "No Python files detected, skipping CodeQL analysis."
