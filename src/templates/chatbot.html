@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"
+        integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
+        crossorigin="anonymous"></script>
+    <title>Chatbot</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .chat-container {
+            width: 100%;
+            max-width: 600px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .chat-header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        .messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background-color: #f1f1f1;
+        }
+        .message {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .message p {
+            padding: 10px 15px;
+            border-radius: 20px;
+            margin: 0;
+        }
+        .message.sent p {
+            background-color: #007bff;
+            color: #fff;
+            align-self: flex-end;
+        }
+        .message.received p {
+            background-color: #e9ecef;
+            color: #333;
+            align-self: flex-start;
+        }
+        .input-group {
+            display: flex;
+            padding: 10px;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+        }
+        .input-group input {
+            flex: 1;
+            border: 0;
+            border-radius: 20px;
+            padding: 10px;
+            margin-right: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .input-group input:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .input-group button {
+            border: 0;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .input-group button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">Chatbot</div>
+        <div class="messages"></div>
+        <div class="input-group">
+            <input type="text" placeholder="Type a message..." id="messageInput" />
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
 
+    <script>
+        const socket = io();
+
+        let messageContainer = document.querySelector(".messages");
+
+        socket.on("connect", () => {
+            let p = document.createElement("p")
+            p.innerText = "You're connected";
+            p.style.color = "green";
+            p.style.textAlign = "center";
+            messageContainer.appendChild(p);
+        });
+
+        let messageInput = document.getElementById("messageInput");
+        let sendButton = document.getElementById("sendButton");
+
+        sendButton.addEventListener("click", () => {
+            if (messageInput.value.trim() !== "") {
+                socket.emit("message", messageInput.value);
+                appendMessage(messageInput.value, 'sent');
+                messageInput.value = "";
+            }
+        });
+
+        messageInput.addEventListener("keypress", (e) => {
+            if (e.which === 13 && messageInput.value.trim() !== "") {
+                socket.emit("message", messageInput.value);
+                //appendMessage(messageInput.value, 'sent');
+                messageInput.value = "";
+            }
+        });
+
+        socket.on('message', (message) => {
+            appendMessage(message, 'received');
+        });
+
+        function appendMessage(message, type) {
+            let messageElement = document.createElement("div");
+            messageElement.classList.add("message", type);
+            let messageText = document.createElement("p");
+            messageText.innerText = message;
+            messageElement.appendChild(messageText);
+            messageContainer.appendChild(messageElement);
+            messageContainer.scrollTop = messageContainer.scrollHeight;
+        }
+    </script>
+</body>
+</html>
