@@ -190,7 +190,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # venv stuff
-Include/
-Scripts/
-share/
+Include
+Scripts
+share
 pyvenv.cfg
+Library
