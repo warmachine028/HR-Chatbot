@@ -195,3 +195,5 @@ Scripts
 share
 pyvenv.cfg
 Library
+
+.vscode
