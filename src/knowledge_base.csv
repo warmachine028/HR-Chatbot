@@ -20,6 +20,9 @@ Query,Response
 "What happens if someone doesn't comply with this policy?","Pursuit Software reserves the right to take appropriate disciplinary action for noncompliance with this policy."
 "What equipment is required for remote work?","A secure, up-to-date computer or laptop that meets our hardware and software requirements,Depending on job requirements, a company-issued or personal mobile device may be necessary for accessing corporate applications or for communication."
 "What about internet connectivity?","Primary Internate connection should be your main source of connectivity during regular work hours and must have sufficient bandwidth to support work-related activities, such as video conferences, emails, and other online tools,In case your primary connection experiences downtime. Backup should be from a different service provider or a separate network to minimize the likelihood of simultaneous failures."
+"I would like to request to work from home for a week.","I can help with that. Could you please provide the dates you are requesting to work from home?"
+"I would like to work from home from July 5th to July 9th.","Got it. Could you please provide the reason for your work from home request?"
+"I need to take care of a family member who is unwell.","Thank you. I will now submit your work from home request for the specified dates. You will receive an email confirmation once the request is processed."
 "What are the requirements for certification to be eligible for reimbursement?","For certification to be eligible for reimbursement, it must be done on the company's recommendation."
 "Who pays for the certification or exam fees initially?","The employee must initially pay for the certification or exam fees."
 "What are the conditions for reimbursement?","To be eligible for reimbursement:1.The employee must pass the certification exam.
@@ -29,5 +32,25 @@ Query,Response
 "What happens if I fail the exam on my first attempt?","If you fail the exam on your first attempt, you can take a second attempt. The reimbursement will cover the maximum of the two exam fees (either the first attempt or the retake)."
 "And if I fail the second attempt?","If you fail the second attempt, there will be no reimbursement for any attempt."
 "I have a question about salary increments.","I understand that salary increments are an important topic. However, I’m not equipped to provide detailed information on that. I can connect you with our HR team who can assist you further."
+"Hi, I have a question about my payslip,"I'd be happy to help with that. Could you please specify what you would like to know about your payslip?"
+"I can't access my latest payslip.","I see. Let's resolve this. Please follow these steps to access your payslip:
+1.Log in to the https://pursuit.keka.com portal using your credentials.
+2.Navigate to the "My Finances" section.
+3.Select "My Pay" section.
+4.Select "Pay Slips" section.
+5.Select the relevant month and year to view or download your payslip."
+"I'm getting an error message that says "Access Denied.","Thank you for the information. This might be due to permission settings or a system issue. Let's try these steps:
+1.Ensure you are using the correct login credentials.
+2.Clear your browser cache and cookies, then try logging in again.
+3.If the issue persists, please contact the tech support team at techsupport@pursuitsoftware.com"
+"Is there anything else I can assist you with regarding your payslip?,"How can I download my past 6 months Payslip?"
+"1.Log in to the https://pursuit.keka.com portal using your credentials.
+2.Navigate to the "My Finances" section.
+3.Select "My Pay" section.
+4.Select "Pay Slips" section.
+5.Select the relevant month and year to view or download your payslip.","Ok".
+"Is there anything else I can assist you with today?","No, that's all. Thank you!".
+
+
 
 
