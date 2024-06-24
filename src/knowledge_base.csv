@@ -34,7 +34,7 @@ Query,Response
 "I can't access my latest payslip","I see. Let's resolve this. Please follow these steps to access your payslip:1.Log in to the https://pursuit.keka.com portal using your credentials.2.Navigate to the My Finances section.3.Select My Pay section.4.Select Pay Slips section.5.Select the relevant month and year to view or download your payslip."
 "I'm getting an error message that says Access Denied","Thank you for the information. This might be due to permission settings or a system issue. Let's try these steps:1.Ensure you are using the correct login credentials.2.Clear your browser cache and cookies, then try logging in again.3.If the issue persists, please contact the tech support team at techsupport@pursuitsoftware.com"
 "Is there anything else I can assist you with regarding your payslip?","How can I download my past 6 months Payslip?"
-"Please follow these steps to download your payslip:1.Log in to the https://pursuit.keka.com portal using your credentials.2.Navigate to the My Finances section.3.Select My Pay section.4.Select Pay Slips section.5.Select the relevant month and year to view or download your payslip.","Ok".
+"Please follow these steps to download your payslip:1.Log in to the https://pursuit.keka.com portal using your credentials.2.Navigate to the My Finances section.3.Select My Pay section.4.Select Pay Slips section.5.Select the relevant month and year to view or download your payslip","Ok".
 "Is there anything else I can assist you with today?","No, that's all. Thank you!".
 
 
