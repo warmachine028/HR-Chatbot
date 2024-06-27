@@ -188,3 +188,12 @@ temp.js
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# venv stuff
+Include
+Scripts
+share
+pyvenv.cfg
+Library
+
+.vscode
