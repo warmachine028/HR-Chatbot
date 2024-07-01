@@ -1,5 +1,4 @@
-from flask import Flask, render_template,request
-from flask import jsonify
+from flask import Flask, render_template, request, jsonify
 from flask_socketio import SocketIO, emit
 import Model_ip
 import numpy as np
@@ -33,7 +32,7 @@ def BOT():
     return render_template('BOT.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
 
 # @app.route('/operator')
 # def hrchat():
