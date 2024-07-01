@@ -9,14 +9,14 @@ body {
     overflow: hidden; /* Ensure no overflow from trees */
     transition: background-image 0.8s, opacity 0.5s ease; /* Smooth transitions */
 }
-
+ 
 .toggle-container {
     position: absolute;
     top: 10px;
     right: 10px;
     z-index: 1000;
 }
-
+ 
 .toggle {
     position: relative;
     width: 60px;
@@ -29,11 +29,11 @@ body {
     cursor: pointer;
     transition: background-color 0.5s ease;
 }
-
+ 
 .toggle-input {
     display: none;
 }
-
+ 
 .toggle-label {
     display: flex;
     justify-content: space-between;
@@ -43,7 +43,7 @@ body {
     position: relative;
     z-index: 2;
 }
-
+ 
 .toggle-handle {
     position: absolute;
     top: 1.5px;
@@ -54,16 +54,16 @@ body {
     border-radius: 50%;
     transition: transform 0.3s ease-in-out;
     z-index: 1;
-    background-image: url('images1/moon.png');
+    background-image: url('/BotProject/static/moon.png');
     background-size: cover;
 }
-
+ 
 .toggle-input:checked + .toggle-label .toggle-handle {
     transform: translateX(24px);
-    background-image: url('images1/sun.png');
+    background-image: url('/BotProject/static/sun.png');
     background-size: cover;
 }
-
+ 
 .main-container {
     display: flex;
     justify-content: center;
@@ -75,43 +75,43 @@ body {
     border-radius: 8px; /* Add border radius for rounded corners */
     margin-right: 50px;
 }
-
+ 
 body.light-mode .main-container {
     background-color: #f0f0f0; /* Light mode background color */
 }
-
+ 
 body.dark-mode .main-container {
     background-color: #151515; /* Dark mode background color */
 }
-
+ 
 .login-container, .register-container {
     width: 300px;
     height: auto;
     position: relative;
     z-index: 1; /* Ensure login box is above trees */
 }
-
+ 
 .login-box, .register-box {
     padding: 20px;
 }
-
+ 
 .login-title, .register-title {
     text-align: center;
     margin-bottom: 20px;
     font-size: 24px;
     color: var(--text-color);
 }
-
+ 
 .input-group {
     margin-bottom: 15px;
 }
-
+ 
 .input-group label {
     display: block;
     margin-bottom: 5px;
     color: var(--text-color);
 }
-
+ 
 .input-group input {
     width: 100%;
     padding: 10px;
@@ -120,7 +120,7 @@ body.dark-mode .main-container {
     background-color: var(--input-bg-color);
     color: var(--input-text-color);
 }
-
+ 
 .login-button, .register-button {
     width: 100%;
     padding: 10px;
@@ -131,11 +131,11 @@ body.dark-mode .main-container {
     cursor: pointer;
     font-size: 16px;
 }
-
+ 
 .login-button:hover, .register-button:hover {
     background-color: #be004c;
 }
-
+ 
 body.light-mode {
     --bg-color: #c0c0c0;
     --text-color: #333;
@@ -147,7 +147,7 @@ body.light-mode {
     background-position: center; /* Center the background image */
     opacity: 0.9;
 }
-
+ 
 body.dark-mode {
     --bg-color: #333;
     --text-color: #fff;
