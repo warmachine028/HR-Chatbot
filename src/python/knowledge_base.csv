@@ -36,6 +36,10 @@ Query,Response
 "How do I apply for paternity leave?","To apply for paternity leave, log into Keka, navigate to the 'Leave' section, and submit the paternity leave request form for approval."
 "What is the process for changing my work schedule?","To change your work schedule, discuss with your manager and update your work hours on Keka under the 'Attendance' section after approval."
 "How do I submit feedback about the workplace?","To submit feedback about the workplace, use the 'Feedback' feature on Keka. You can provide anonymous or attributed feedback."
+"Hi, I have a question about my payslip","I'd be happy to help with that. Could you please specify what you would like to know about your payslip?"
+"I can't access my latest payslip","I see. Let's resolve this. Please follow these steps to access your payslip:1.Log in to the https://pursuit.keka.com portal using your credentials.2.Navigate to the My Finances section.3.Select My Pay section.4.Select Pay Slips section.5.Select the relevant month and year to view or download your payslip."
+"I'm getting an error message that says Access Denied","Thank you for the information. This might be due to permission settings or a system issue. Let's try these steps:1.Ensure you are using the correct login credentials.2.Clear your browser cache and cookies, then try logging in again.3.If the issue persists, please contact the tech support team at techsupport@pursuitsoftware.com"
+"How can I download my past 6 months Payslip?","Please follow these steps to download your payslip:1.Log in to the https://pursuit.keka.com portal using your credentials.2.Navigate to the My Finances section.3.Select My Pay section.4.Select Pay Slips section.5.Select the relevant month and year to view or download your payslip"
 "Where can I find the company holiday calendar?","The company holiday calendar is available on Keka under the 'Calendar' section. It lists all the official holidays for the year."
 "How do I track my project hours?","You can track your project hours on Keka by going to the 'Timesheet' section and logging your hours worked on each project."
 "What should I do if I experience technical issues with Keka?","If you experience technical issues with Keka, please contact the IT support team at contact@pursuitsoftware.biz or call 03323575777 for assistance."
@@ -47,5 +51,7 @@ Query,Response
 "How do I access my training history?","You can access your training history on Keka under the 'Learning and Development' section. It will list all the courses and programs you have completed."
 "What is the process for getting a parking permit?","To get a parking permit, fill out the parking permit request form available on Keka under the 'Facilities' section and submit it for approval."
 "What should I do if I lose my employee ID card?","If you lose your employee ID card, report it immediately on Keka under the 'Security' section and request a replacement."
-
+"I would like to request to work from home for a week.","I can help with that. Could you please provide the dates you are requesting to work from home?"
+"I would like to work from home from July 5th to July 9th.","Got it. Could you please provide the reason for your work from home request?"
+"I need to take care of a family member who is unwell.","Thank you. I will now submit your work from home request for the specified dates. You will receive an email confirmation once the request is processed."
 
