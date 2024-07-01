@@ -191,7 +191,8 @@ yarn-error.log*
 
 # venv stuff
 Include
-Scripts
+src/server/Scripts
+src/python/Scripts
 share
 pyvenv.cfg
 Library
