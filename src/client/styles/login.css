@@ -54,13 +54,13 @@ body {
     border-radius: 50%;
     transition: transform 0.3s ease-in-out;
     z-index: 1;
-    background-image: url('images/moon.png');
+    background-image: url('/BotProject/static/moon.png');
     background-size: cover;
 }
 
 .toggle-input:checked + .toggle-label .toggle-handle {
     transform: translateX(24px);
-    background-image: url('images/sun.png');
+    background-image: url('/BotProject/static/sun.png');
     background-size: cover;
 }
 
@@ -142,7 +142,7 @@ body.light-mode {
     --input-bg-color: #fff;
     --input-text-color: #333;
     --toggle-bg-color: #707070;
-    background-image: url('images/Day.jpg'); /* Background for light mode */
+    background-image: url('styles/Day.jpg'); /* Background for light mode */
     background-size: cover; /* Ensure night image covers the entire background */
     background-position: center; /* Center the background image */
     opacity: 0.9;
@@ -154,7 +154,7 @@ body.dark-mode {
     --input-bg-color: #555;
     --input-text-color: #fff;
     --toggle-bg-color: #fff673;
-    background-image: url('images/Night.jpg'); /* Background for dark mode */
+    background-image: url('styles/Night.jpg'); /* Background for dark mode */
     background-size: cover; /* Ensure night image covers the entire background */
     background-position: center; /* Center the background image */
     opacity: 0.8;

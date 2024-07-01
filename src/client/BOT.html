@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Interface</title>
+    <link rel="stylesheet" href="../static/styles/BOT.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="../static/CompanyLogo 1.png" alt="Pursuit Software">
+            <h1>Chat With BOT</h1>
+            <!-- <div class="notifications">
+                <span>0</span>
+            </div> -->
+            <div class="dark-mode-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </header>
+        <main>
+            <div class="chat-window">
+                <div class="chat-log"></div>
+                <div class="user-input">
+                    <input type="text" id="userInput" placeholder="Type your query here...">
+                    <button id="sendButton">Send</button>
+                </div>
+            </div>
+            <div class="faq">
+                <h2>FAQ'S</h2>
+                <ul>
+                    <li><a href="#" onclick="handleFaqClick('What are the office hours?')">What are the office hours?</a></li>
+                    <li><a href="#" onclick="handleFaqClick('How do salary increments work?')">How do salary increments work?</a></li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <a href="https://teams.microsoft.com/l/entity/7e8715b7-7565-4f1c-a50a-bc43b444ff96/_djb2_msteams_prefix_2907272877?context=%7B%22channelId%22%3A%2219%3AERCrjVp9tAvmSoBTVIzkwi09ez2VIi4uYSOwO2-ffTc1%40thread.tacv2%22%7D&tenantId=b16b5078-3c36-482e-b98e-b986822e8f7f" id="nextPg" class="footer-link">Raise a ticket?</a>
+
+            <br>
+
+            <a href="mailto:hrsupport@pursuitsoftware.biz" class="footer-link">Leave a mail to HR Support!</a>
+        </footer>
+        
+        
+    </div>
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <script src="../static/styles/BOT.js"></script>
+
+</body>
+</html>
