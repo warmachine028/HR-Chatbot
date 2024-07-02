@@ -33,16 +33,12 @@
 		{
 			"tag": "work_injury",
 			"patterns": ["What should I do if I get injured at work?", "Injury at work procedure?", "Workplace injury steps?"],
-			"responses": [
-				"If you get injured at work, report the injury to your supervisor immediately and seek medical attention if necessary. Fill out an incident report form available on the HR portal."
-			]
+			"responses": ["If you get injured at work, report the injury to your supervisor immediately and seek medical attention if necessary. Fill out an incident report form available on the HR portal."]
 		},
 		{
 			"tag": "covid_protocols",
 			"patterns": ["What are the COVID-19 protocols in the office?", "Office COVID-19 rules?", "COVID-19 safety measures?"],
-			"responses": [
-				"Please follow the COVID-19 protocols outlined in the health and safety section on the company intranet. This includes wearing masks, maintaining social distance, and regular hand sanitization."
-			]
+			"responses": ["Please follow the COVID-19 protocols outlined in the health and safety section on the company intranet. This includes wearing masks, maintaining social distance, and regular hand sanitization."]
 		},
 		{
 			"tag": "upcoming_training",
@@ -82,20 +78,12 @@
 		{
 			"tag": "performance_bonus",
 			"patterns": ["What are the criteria for receiving a performance bonus?", "Performance bonus criteria?", "Receiving a performance bonus?"],
-			"responses": [
-				"The criteria for receiving a performance bonus include meeting or exceeding your performance goals, contributing to team success, and demonstrating company values. Details are available in the 'Compensation' section on the HR portal."
-			]
+			"responses": ["The criteria for receiving a performance bonus include meeting or exceeding your performance goals, contributing to team success, and demonstrating company values. Details are available in the 'Compensation' section on the HR portal."]
 		},
 		{
 			"tag": "remote_work_responsibilities",
-			"patterns": [
-				"What are the responsibilities of employees or contractors when they plan to work from a location other than their base office?",
-				"Remote work responsibilities?",
-				"Working from remote location responsibilities?"
-			],
-			"responses": [
-				"Employees or contractors planning to work from any location other than their base office location will be considered as working from a remote location. They must notify management via email before relocating from their remote work location."
-			]
+			"patterns": ["What are the responsibilities of employees or contractors when they plan to work from a location other than their base office?", "Remote work responsibilities?", "Working from remote location responsibilities?"],
+			"responses": ["Employees or contractors planning to work from any location other than their base office location will be considered as working from a remote location. They must notify management via email before relocating from their remote work location."]
 		},
 		{
 			"tag": "remote_work_notification",
@@ -110,16 +98,12 @@
 		{
 			"tag": "remote_work_equipment",
 			"patterns": ["What equipment is required for remote work?", "Remote work equipment requirements?", "Necessary equipment for remote work?"],
-			"responses": [
-				"A secure, up-to-date computer or laptop that meets our hardware and software requirements, depending on job requirements, a company-issued or personal mobile device may be necessary for accessing corporate applications or for communication."
-			]
+			"responses": ["A secure, up-to-date computer or laptop that meets our hardware and software requirements, depending on job requirements, a company-issued or personal mobile device may be necessary for accessing corporate applications or for communication."]
 		},
 		{
 			"tag": "internet_connectivity",
 			"patterns": ["What about internet connectivity?", "Internet requirements for remote work?", "Remote work internet connectivity?"],
-			"responses": [
-				"Primary internet connection should be your main source of connectivity during regular work hours and must have sufficient bandwidth to support work-related activities, such as video conferences, emails, and other online tools. In case your primary connection experiences downtime, a backup should be from a different service provider or a separate network to minimize the likelihood of simultaneous failures."
-			]
+			"responses": ["Primary internet connection should be your main source of connectivity during regular work hours and must have sufficient bandwidth to support work-related activities, such as video conferences, emails, and other online tools. In case your primary connection experiences downtime, a backup should be from a different service provider or a separate network to minimize the likelihood of simultaneous failures."]
 		},
 		{
 			"tag": "certification_reimbursement",
@@ -134,9 +118,7 @@
 		{
 			"tag": "reimbursement_conditions",
 			"patterns": ["What are the conditions for reimbursement?", "Conditions for certification reimbursement?", "Certification reimbursement conditions?"],
-			"responses": [
-				"To be eligible for reimbursement: 1. The employee must pass the certification exam. 2. If the employee fails the exam, they may take a second attempt. In this case, the reimbursement will be for the maximum of the two exam fees (either the first attempt or the retake). 3. If the employee fails the exam a second time, there will be no reimbursement for any attempt."
-			]
+			"responses": ["To be eligible for reimbursement: 1. The employee must pass the certification exam. 2. If the employee fails the exam, they may take a second attempt. In this case, the reimbursement will be for the maximum of the two exam fees (either the first attempt or the retake). 3. If the employee fails the exam a second time, there will be no reimbursement for any attempt."]
 		},
 		{
 			"tag": "reimbursement_timing",
@@ -146,9 +128,7 @@
 		{
 			"tag": "first_attempt_fail",
 			"patterns": ["What happens if I fail the exam on my first attempt?", "Failing certification exam first attempt?", "First attempt failure for certification exam?"],
-			"responses": [
-				"If you fail the exam on your first attempt, you can take a second attempt. The reimbursement will cover the maximum of the two exam fees (either the first attempt or the retake)."
-			]
+			"responses": ["If you fail the exam on your first attempt, you can take a second attempt. The reimbursement will cover the maximum of the two exam fees (either the first attempt or the retake)."]
 		},
 		{
 			"tag": "second_attempt_fail",
@@ -158,9 +138,7 @@
 		{
 			"tag": "salary_increments",
 			"patterns": ["I have a question about salary increments.", "Salary increments query?", "How do salary increments work?"],
-			"responses": [
-				"I understand that salary increments are an important topic. However, I’m not equipped to provide detailed information on that. I can connect you with our HR team who can assist you further."
-			]
+			"responses": ["I understand that salary increments are an important topic. However, I’m not equipped to provide detailed information on that. I can connect you with our HR team who can assist you further."]
 		},
 		{
 			"tag": "request_time_off",
@@ -230,9 +208,7 @@
 		{
 			"tag": "career_development",
 			"patterns": ["What are the options for career development within the company?", "Career development opportunities?", "Internal career development options?"],
-			"responses": [
-				"Career development options within the company are detailed on Keka under the 'Career Development' section. This includes mentorship programs, training courses, and promotion pathways."
-			]
+			"responses": ["Career development options within the company are detailed on Keka under the 'Career Development' section. This includes mentorship programs, training courses, and promotion pathways."]
 		},
 		{
 			"tag": "technical_issues_workstation",
