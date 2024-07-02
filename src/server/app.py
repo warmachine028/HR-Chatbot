@@ -1,15 +1,17 @@
 from flask import Flask, render_template,request
 from flask import jsonify
-from flask_socketio import SocketIO, emit
-import Model_ip,mic
 import numpy as np
+import Model_ip
 
 app = Flask(__name__)
-socketio = SocketIO(app)
 
 @app.route('/') # Home page rendering
 def Home():
     return render_template('Home.html')
+
+@app.route('/registration') # Home page rendering
+def registartion():
+    return render_template('registration.html')
 
 @app.route('/login') #login page rendering
 def login():
@@ -21,7 +23,7 @@ def handle_post_request():
     message = data.get('message')
     
     if message:
-        response = Model_ip.get_response(message)
+        response =Model_ip.get_response(message)
         # Convert NumPy ndarray to Python list
         response_serializable = response.tolist() if isinstance(response, np.ndarray) else response
         return jsonify(response_serializable)
@@ -46,3 +48,5 @@ def BOT():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
