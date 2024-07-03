@@ -1,268 +1,336 @@
 {
 	"intents": [
 		{
+			"tag": "greetings",
+			"patterns": ["Hi", "Hello", "Good morning", "Good afternoon", "Good evening", "Greetings"],
+			"responses": ["Hello! How can I assist you today?", "Hi there! What can I do for you?", "Good day! How can I help?", "Greetings! How may I assist you?"]
+		},
+		{
 			"tag": "office_hours",
 			"patterns": ["What are the office hours?", "When is the office open?", "Office working hours?"],
-			"responses": ["Our office hours are from 9:30 AM to 6:30 PM, Monday through Friday."]
+			"responses": ["Our office hours are from 9:30 AM to 6:30 PM, Monday through Friday.", "The office is open from 9:30 AM to 6:30 PM on weekdays.", "We operate from 9:30 AM to 6:30 PM, Monday to Friday."]
 		},
 		{
 			"tag": "employee_handbook",
 			"patterns": ["How do I find the employee handbook?", "Where is the employee handbook?", "Employee handbook location?"],
-			"responses": ["You can find the employee handbook on the company intranet under the HR section."]
+			"responses": ["You can find the employee handbook on the company intranet under the HR section.", "The employee handbook is available on our company intranet in the HR section.", "Please check the HR section of the company intranet for the employee handbook."]
 		},
 		{
 			"tag": "vacation_days",
 			"patterns": ["How many vacation days do I have left?", "Vacation days left?", "Remaining vacation days?"],
-			"responses": ["You can check your remaining vacation days on the HR portal under 'My Leave Balance'. If you need further assistance, please contact HR."]
+			"responses": ["You can check your remaining vacation days on the HR portal under 'My Leave Balance'. If you need further assistance, please contact HR.", "Your remaining vacation days are listed on the HR portal under 'My Leave Balance'. For more help, reach out to HR.", "Visit 'My Leave Balance' on the HR portal to see your remaining vacation days. Contact HR for additional queries."]
 		},
 		{
 			"tag": "maternity_leave",
 			"patterns": ["How do I apply for maternity leave?", "Maternity leave process?", "Applying for maternity leave?"],
-			"responses": ["To apply for maternity leave, please fill out the maternity leave request form available on the HR portal and submit it to your manager for approval."]
+			"responses": ["To apply for maternity leave, please fill out the maternity leave request form available on the HR portal and submit it to your manager for approval.", "Complete the maternity leave request form on the HR portal and submit it to your manager for approval to apply for maternity leave.", "You can apply for maternity leave by filling out the request form on the HR portal and getting your manager's approval."]
 		},
 		{
 			"tag": "next_payday",
 			"patterns": ["When is the next payday?", "Next payday date?", "Upcoming payday?"],
-			"responses": ["The next payday is on the last working day of the month."]
+			"responses": ["The next payday is on the last working day of the month.", "Payday is scheduled for the last working day of each month.", "Your next payday will be on the last working day of this month."]
 		},
 		{
 			"tag": "change_bank_account",
 			"patterns": ["How do I change my bank account for salary deposits?", "Change salary deposit bank account?", "Update bank account for salary?"],
-			"responses": ["To change your bank account details, please update your information on the HR portal under 'Payroll Information' or contact the payroll department."]
+			"responses": ["To change your bank account details, please update your information on the HR portal under 'Payroll Information' or contact the payroll department.", "You can update your bank account details on the HR portal under 'Payroll Information' or by contacting the payroll department.", "Please visit 'Payroll Information' on the HR portal to update your bank account details, or reach out to the payroll department."]
 		},
 		{
 			"tag": "work_injury",
 			"patterns": ["What should I do if I get injured at work?", "Injury at work procedure?", "Workplace injury steps?"],
 			"responses": [
-				"If you get injured at work, report the injury to your supervisor immediately and seek medical attention if necessary. Fill out an incident report form available on the HR portal."
+				"If you get injured at work, report the injury to your supervisor immediately and seek medical attention if necessary. Fill out an incident report form available on the HR portal.",
+				"Report any workplace injuries to your supervisor right away and seek medical help if needed. Complete an incident report form on the HR portal.",
+				"In case of a work injury, notify your supervisor immediately, get medical help if required, and fill out an incident report form on the HR portal."
 			]
 		},
 		{
 			"tag": "covid_protocols",
 			"patterns": ["What are the COVID-19 protocols in the office?", "Office COVID-19 rules?", "COVID-19 safety measures?"],
 			"responses": [
-				"Please follow the COVID-19 protocols outlined in the health and safety section on the company intranet. This includes wearing masks, maintaining social distance, and regular hand sanitization."
+				"Please follow the COVID-19 protocols outlined in the health and safety section on the company intranet. This includes wearing masks, maintaining social distance, and regular hand sanitization.",
+				"Our COVID-19 protocols, including mask-wearing, social distancing, and hand sanitizing, are detailed in the health and safety section of the company intranet.",
+				"Refer to the health and safety section on the company intranet for COVID-19 protocols, such as wearing masks, keeping social distance, and sanitizing hands regularly."
 			]
 		},
 		{
 			"tag": "upcoming_training",
 			"patterns": ["Are there any upcoming training sessions?", "Next training sessions?", "Scheduled training sessions?"],
-			"responses": ["You can find the schedule for upcoming training sessions on the HR portal under 'Training Calendar'."]
+			"responses": ["You can find the schedule for upcoming training sessions on the HR portal under 'Training Calendar'.", "Check the 'Training Calendar' on the HR portal for details on upcoming training sessions.", "Upcoming training sessions are listed on the HR portal under 'Training Calendar'."]
 		},
 		{
 			"tag": "professional_development",
 			"patterns": ["How do I enroll in a professional development course?", "Enrolling in development courses?", "Sign up for professional development?"],
-			"responses": ["To enroll in a professional development course, visit the 'Training and Development' section on the HR portal and select the course you're interested in."]
+			"responses": ["To enroll in a professional development course, visit the 'Training and Development' section on the HR portal and select the course you're interested in.", "Sign up for professional development courses through the 'Training and Development' section on the HR portal.", "You can enroll in professional development courses by visiting the 'Training and Development' section on the HR portal."]
 		},
 		{
 			"tag": "workplace_harassment",
 			"patterns": ["How do I report workplace harassment?", "Reporting harassment at work?", "Workplace harassment complaint?"],
-			"responses": ["To report workplace harassment, please contact the HR department directly or use the anonymous reporting tool available on the HR portal."]
+			"responses": ["To report workplace harassment, please contact the HR department directly or use the anonymous reporting tool available on the HR portal.", "Report workplace harassment by contacting HR directly or using the anonymous reporting tool on the HR portal.", "You can report workplace harassment to HR or use the anonymous reporting tool on the HR portal."]
 		},
 		{
 			"tag": "file_grievance",
 			"patterns": ["What is the process for filing a grievance?", "How to file a grievance?", "Submitting a grievance?"],
-			"responses": ["To file a grievance, please complete the grievance form available on the HR portal and submit it to the HR department. You will be contacted for a follow-up meeting."]
+			"responses": ["To file a grievance, please complete the grievance form available on the HR portal and submit it to the HR department. You will be contacted for a follow-up meeting.", "Fill out the grievance form on the HR portal and submit it to HR to file a grievance. You will be contacted for a follow-up meeting.", "Submit the grievance form on the HR portal to the HR department. You will be contacted for a follow-up meeting."]
 		},
 		{
 			"tag": "performance_review",
 			"patterns": ["How do I access my performance review?", "View performance review?", "Performance review access?"],
-			"responses": ["You can access your performance review on the HR portal under 'My Performance'. If you have any questions, please contact your manager."]
+			"responses": ["You can access your performance review on the HR portal under 'My Performance'. If you have any questions, please contact your manager.", "Your performance review can be accessed on the HR portal under 'My Performance'. Contact your manager if you have questions.", "To view your performance review, go to 'My Performance' on the HR portal. For questions, contact your manager."]
 		},
 		{
 			"tag": "goal_setting",
 			"patterns": ["What is the process for setting goals for the new quarter?", "Setting quarterly goals?", "New quarter goal setting?"],
-			"responses": ["To set goals for the new quarter, use the goal-setting tool on the HR portal under 'Performance Management' and discuss them with your manager."]
+			"responses": ["To set goals for the new quarter, use the goal-setting tool on the HR portal under 'Performance Management' and discuss them with your manager.", "Use the goal-setting tool under 'Performance Management' on the HR portal and discuss with your manager to set goals for the new quarter.", "Set your quarterly goals using the goal-setting tool on the HR portal and discuss them with your manager."]
 		},
 		{
 			"tag": "employee_recognition",
 			"patterns": ["How do I nominate someone for an employee recognition award?", "Nominate for employee recognition?", "Employee recognition nomination?"],
-			"responses": ["To nominate someone for an employee recognition award, fill out the nomination form on the HR portal under 'Employee Recognition'."]
+			"responses": ["To nominate someone for an employee recognition award, fill out the nomination form on the HR portal under 'Employee Recognition'.", "Submit a nomination for an employee recognition award by filling out the form under 'Employee Recognition' on the HR portal.", "Nominate a colleague for an employee recognition award by completing the nomination form on the HR portal under 'Employee Recognition'."]
 		},
 		{
 			"tag": "performance_bonus",
 			"patterns": ["What are the criteria for receiving a performance bonus?", "Performance bonus criteria?", "Receiving a performance bonus?"],
 			"responses": [
-				"The criteria for receiving a performance bonus include meeting or exceeding your performance goals, contributing to team success, and demonstrating company values. Details are available in the 'Compensation' section on the HR portal."
+				"The criteria for receiving a performance bonus include meeting or exceeding your performance goals, contributing to team success, and demonstrating company values. Details are available in the 'Compensation' section on the HR portal.",
+				"Performance bonuses are awarded based on meeting or exceeding goals, contributing to team success, and demonstrating company values. More details are in the 'Compensation' section on the HR portal.",
+				"To receive a performance bonus, you need to meet or exceed your performance goals, contribute to team success, and demonstrate our company values. Check the 'Compensation' section on the HR portal for more details."
 			]
 		},
 		{
 			"tag": "remote_work_responsibilities",
-			"patterns": [
-				"What are the responsibilities of employees or contractors when they plan to work from a location other than their base office?",
-				"Remote work responsibilities?",
-				"Working from remote location responsibilities?"
-			],
-			"responses": [
-				"Employees or contractors planning to work from any location other than their base office location will be considered as working from a remote location. They must notify management via email before relocating from their remote work location."
-			]
+			"patterns": ["What are the responsibilities of employees or contractors when they plan to work from a location other than their base office?", "Responsibilities for working remotely?", "What do I need to do if I work from a different location?"],
+			"responses": ["Employees or contractors planning to work from any location other than their base office location will be considered as working from a remote location. They must notify management via email before relocating from their remote work location.", "If you plan to work from a location other than your base office, you must notify management via email before relocating.", "To work from a different location, employees or contractors must email management with their plans."]
 		},
 		{
 			"tag": "remote_work_notification",
-			"patterns": ["Who should they notify for remote work policy, and how?", "Remote work policy notification?", "Notifying for remote work policy?"],
-			"responses": ["They need to send an email to both HR Support at hrsupport@pursuitsoftware.biz and Technical Support at techsupport@pursuitsoftware.biz."]
+			"patterns": ["Who should they notify for remote work policy, and how?", "Who to contact for remote work policy?", "How to notify for remote work?"],
+			"responses": ["They need to send an email to both HR Support at hrsupport@pursuitsoftware.biz and Technical Support at techsupport@pursuitsoftware.biz.", "Notify HR Support at hrsupport@pursuitsoftware.biz and Technical Support at techsupport@pursuitsoftware.biz via email.", "You should email HR Support at hrsupport@pursuitsoftware.biz and Technical Support at techsupport@pursuitsoftware.biz for remote work policy."]
 		},
 		{
 			"tag": "remote_work_noncompliance",
-			"patterns": ["What happens if someone doesn't comply with this policy?", "Noncompliance with remote work policy?", "Remote work policy violation consequences?"],
-			"responses": ["Pursuit Software reserves the right to take appropriate disciplinary action for noncompliance with this policy."]
+			"patterns": ["What happens if someone doesn't comply with this policy?", "Consequences of not following remote work policy?", "What if I don't follow the remote work policy?"],
+			"responses": ["Pursuit Software reserves the right to take appropriate disciplinary action for noncompliance with this policy.", "Noncompliance with the remote work policy may result in disciplinary action by Pursuit Software.", "Pursuit Software may take disciplinary action if the remote work policy is not followed."]
 		},
 		{
 			"tag": "remote_work_equipment",
-			"patterns": ["What equipment is required for remote work?", "Remote work equipment requirements?", "Necessary equipment for remote work?"],
-			"responses": [
-				"A secure, up-to-date computer or laptop that meets our hardware and software requirements, depending on job requirements, a company-issued or personal mobile device may be necessary for accessing corporate applications or for communication."
-			]
+			"patterns": ["What equipment is required for remote work?", "Remote work equipment requirements?", "What do I need for remote work?"],
+			"responses": ["A secure, up-to-date computer or laptop that meets our hardware and software requirements. Depending on job requirements, a company-issued or personal mobile device may be necessary for accessing corporate applications or for communication.", "For remote work, you need a secure, up-to-date computer or laptop. A mobile device may also be necessary for job-related tasks.", "You will need a secure computer or laptop, and possibly a mobile device, for remote work."]
 		},
 		{
-			"tag": "internet_connectivity",
-			"patterns": ["What about internet connectivity?", "Internet requirements for remote work?", "Remote work internet connectivity?"],
+			"tag": "remote_work_internet",
+			"patterns": ["What about internet connectivity?", "Internet requirements for remote work?", "Do I need a specific internet connection for remote work?"],
 			"responses": [
-				"Primary internet connection should be your main source of connectivity during regular work hours and must have sufficient bandwidth to support work-related activities, such as video conferences, emails, and other online tools. In case your primary connection experiences downtime, a backup should be from a different service provider or a separate network to minimize the likelihood of simultaneous failures."
+				"Your primary internet connection should be your main source of connectivity during regular work hours and must have sufficient bandwidth to support work-related activities, such as video conferences, emails, and other online tools. In case your primary connection experiences downtime, a backup from a different service provider or a separate network is necessary to minimize the likelihood of simultaneous failures.",
+				"Ensure your primary internet connection is stable and has enough bandwidth for work activities. A backup connection from a different provider is also required in case of downtime.",
+				"You need a reliable primary internet connection with sufficient bandwidth and a backup connection from a different provider for remote work."
 			]
 		},
 		{
 			"tag": "certification_reimbursement",
-			"patterns": ["What are the requirements for certification to be eligible for reimbursement?", "Certification reimbursement requirements?", "Eligibility for certification reimbursement?"],
-			"responses": ["For certification to be eligible for reimbursement, it must be done on the company's recommendation."]
+			"patterns": ["What are the requirements for certification to be eligible for reimbursement?", "Certification reimbursement requirements?", "How to get reimbursed for certification?"],
+			"responses": ["For certification to be eligible for reimbursement, it must be done on the company's recommendation.", "Certification must be recommended by the company to be eligible for reimbursement.", "Only company-recommended certifications are eligible for reimbursement."]
 		},
 		{
-			"tag": "certification_fees",
-			"patterns": ["Who pays for the certification or exam fees initially?", "Initial payment for certification?", "Who covers certification fees initially?"],
-			"responses": ["The employee must initially pay for the certification or exam fees."]
+			"tag": "certification_initial_payment",
+			"patterns": ["Who pays for the certification or exam fees initially?", "Initial payment for certification fees?", "Who covers the certification fees initially?"],
+			"responses": ["The employee must initially pay for the certification or exam fees.", "Certification or exam fees must be initially paid by the employee.", "Employees are responsible for the initial payment of certification or exam fees."]
 		},
 		{
-			"tag": "reimbursement_conditions",
-			"patterns": ["What are the conditions for reimbursement?", "Conditions for certification reimbursement?", "Certification reimbursement conditions?"],
+			"tag": "certification_reimbursement_conditions",
+			"patterns": ["What are the conditions for reimbursement?", "Conditions for certification fee reimbursement?", "Reimbursement conditions for certification?"],
 			"responses": [
-				"To be eligible for reimbursement: 1. The employee must pass the certification exam. 2. If the employee fails the exam, they may take a second attempt. In this case, the reimbursement will be for the maximum of the two exam fees (either the first attempt or the retake). 3. If the employee fails the exam a second time, there will be no reimbursement for any attempt."
+				"To be eligible for reimbursement: 1. The employee must pass the certification exam. 2. If the employee fails the exam, they may take a second attempt. In this case, the reimbursement will be for the maximum of the two exam fees (either the first attempt or the retake). 3. If the employee fails the exam a second time, there will be no reimbursement for any attempt.",
+				"For reimbursement: 1. Pass the certification exam. 2. If you fail, you may retake the exam once and get reimbursed for the higher of the two fees. 3. No reimbursement if you fail twice.",
+				"Reimbursement conditions include passing the exam, possible reimbursement for one retake if failed, and no reimbursement after a second failure."
 			]
 		},
 		{
-			"tag": "reimbursement_timing",
-			"patterns": ["When will the fees be reimbursed?", "Certification fee reimbursement timing?", "Reimbursement schedule for certification fees?"],
-			"responses": ["The fees will be reimbursed 90 days after the date of certification."]
+			"tag": "certification_reimbursement_timing",
+			"patterns": ["When will the fees be reimbursed?", "Timing of certification fee reimbursement?", "When do I get reimbursed for certification?"],
+			"responses": ["The fees will be reimbursed 90 days after the date of certification.", "Certification fees are reimbursed 90 days after certification.", "You will receive reimbursement for certification fees 90 days after certification."]
 		},
 		{
-			"tag": "first_attempt_fail",
-			"patterns": ["What happens if I fail the exam on my first attempt?", "Failing certification exam first attempt?", "First attempt failure for certification exam?"],
-			"responses": [
-				"If you fail the exam on your first attempt, you can take a second attempt. The reimbursement will cover the maximum of the two exam fees (either the first attempt or the retake)."
-			]
+			"tag": "certification_first_fail",
+			"patterns": ["What happens if I fail the exam on my first attempt?", "First attempt certification exam fail?", "Failing certification exam on first try?"],
+			"responses": ["If you fail the exam on your first attempt, you can take a second attempt. The reimbursement will cover the maximum of the two exam fees (either the first attempt or the retake).", "You can take a second attempt if you fail the first exam. Reimbursement will cover the higher of the two fees.", "Failing the first attempt allows for a second try, with reimbursement for the higher fee of the two attempts."]
 		},
 		{
-			"tag": "second_attempt_fail",
-			"patterns": ["And if I fail the second attempt?", "Second attempt failure for certification exam?", "What if I fail the certification exam twice?"],
-			"responses": ["If you fail the second attempt, there will be no reimbursement for any attempt."]
+			"tag": "certification_second_fail",
+			"patterns": ["And if I fail the second attempt?", "Failing certification exam twice?", "What if I fail the second certification attempt?"],
+			"responses": ["If you fail the second attempt, there will be no reimbursement for any attempt.", "No reimbursement is available if you fail the exam on the second attempt.", "Failing the second attempt means no reimbursement for any exam fees."]
 		},
 		{
 			"tag": "salary_increments",
-			"patterns": ["I have a question about salary increments.", "Salary increments query?", "How do salary increments work?"],
-			"responses": [
-				"I understand that salary increments are an important topic. However, I’m not equipped to provide detailed information on that. I can connect you with our HR team who can assist you further."
-			]
+			"patterns": ["I have a question about salary increments.", "How do salary increments work?", "Salary increase questions?"],
+			"responses": ["I understand that salary increments are an important topic. However, I’m not equipped to provide detailed information on that. I can connect you with our HR team who can assist you further.", "For detailed information on salary increments, I can connect you with our HR team.", "Salary increments are handled by our HR team. I can connect you with them for more details."]
 		},
 		{
 			"tag": "request_time_off",
-			"patterns": ["How do I request time off?", "Time off request process?", "Requesting time off?"],
-			"responses": ["To request time off, log into Keka, navigate to the 'Leave' section, and submit your request. Your manager will review and approve it."]
+			"patterns": ["How do I request time off?", "Requesting time off?", "How to take time off?"],
+			"responses": ["To request time off, log into Keka, navigate to the 'Leave' section, and submit your request. Your manager will review and approve it.", "Submit a time off request on Keka by going to the 'Leave' section. Your manager will need to approve it.", "Use Keka to request time off under the 'Leave' section, and wait for your manager's approval."]
 		},
 		{
-			"tag": "payslips",
-			"patterns": ["Where can I find my payslips?", "Payslip location?", "Accessing payslips?"],
-			"responses": ["You can find your payslips on Keka under the 'Payroll' section. They are available for download and review."]
+			"tag": "find_payslips",
+			"patterns": ["Where can I find my payslips?", "How to view payslips?", "Payslip location?"],
+			"responses": ["You can find your payslips on Keka under the 'Payroll' section. They are available for download and review.", "Payslips are available on Keka under the 'Payroll' section for download and review.", "Check the 'Payroll' section on Keka to view and download your payslips."]
 		},
 		{
-			"tag": "emergency_contact",
-			"patterns": ["How do I update my emergency contact information?", "Update emergency contact?", "Emergency contact information update?"],
-			"responses": ["You can update your emergency contact information on Keka by going to the 'Profile' section and editing your details."]
+			"tag": "update_emergency_contact",
+			"patterns": ["How do I update my emergency contact information?", "Update emergency contact details?", "Change emergency contact info?"],
+			"responses": ["You can update your emergency contact information on Keka by going to the 'Profile' section and editing your details.", "Update your emergency contact information on Keka under the 'Profile' section.", "Edit your emergency contact details on Keka in the 'Profile' section."]
 		},
 		{
-			"tag": "salary_advance",
-			"patterns": ["What is the procedure for requesting a salary advance?", "Salary advance request process?", "How to request salary advance?"],
-			"responses": ["To request a salary advance, log into Keka, go to the 'Finance' section, and fill out the salary advance request form. Submit it for approval."]
+			"tag": "request_salary_advance",
+			"patterns": ["What is the procedure for requesting a salary advance?", "How to request a salary advance?", "Salary advance request process?"],
+			"responses": ["To request a salary advance, log into Keka, go to the 'Finance' section, and fill out the salary advance request form. Submit it for approval.", "Request a salary advance on Keka in the 'Finance' section by filling out the request form and submitting it for approval.", "Use Keka's 'Finance' section to request a salary advance by completing the form and submitting it for approval."]
 		},
 		{
-			"tag": "company_announcements",
-			"patterns": ["How do I access company announcements?", "Where to find company announcements?", "Company announcements access?"],
-			"responses": ["Company announcements can be accessed on Keka under the 'Announcements' section. You can also receive notifications through the Keka app."]
+			"tag": "access_company_announcements",
+			"patterns": ["How do I access company announcements?", "Company announcements location?", "Where to find company announcements?"],
+			"responses": ["Company announcements can be accessed on Keka under the 'Announcements' section. You can also receive notifications through the Keka app.", "Check the 'Announcements' section on Keka for company updates. Notifications are also available on the Keka app.", "Company announcements are available on Keka in the 'Announcements' section and through the Keka app."]
 		},
 		{
-			"tag": "health_insurance",
-			"patterns": ["Where can I find information about my health insurance plan?", "Health insurance plan details?", "Accessing health insurance information?"],
-			"responses": ["Information about your health insurance plan is available on Keka in the 'Benefits' section. You can view plan details and contact information there."]
+			"tag": "health_insurance_info",
+			"patterns": ["Where can I find information about my health insurance plan?", "Health insurance plan details?", "How to view health insurance information?"],
+			"responses": ["Information about your health insurance plan is available on Keka in the 'Benefits' section. You can view plan details and contact information there.", "Find your health insurance plan details in the 'Benefits' section on Keka.", "Check the 'Benefits' section on Keka for information about your health insurance plan."]
 		},
 		{
 			"tag": "paternity_leave",
-			"patterns": ["How do I apply for paternity leave?", "Paternity leave application process?", "Applying for paternity leave?"],
-			"responses": ["To apply for paternity leave, log into Keka, navigate to the 'Leave' section, and submit the paternity leave request form for approval."]
+			"patterns": ["How do I apply for paternity leave?", "Paternity leave application process?", "Requesting paternity leave?"],
+			"responses": ["To apply for paternity leave, log into Keka, navigate to the 'Leave' section, and submit the paternity leave request form for approval.", "Apply for paternity leave on Keka in the 'Leave' section by submitting the request form.", "Submit a paternity leave request on Keka under the 'Leave' section for approval."]
 		},
 		{
 			"tag": "change_work_schedule",
-			"patterns": ["What is the process for changing my work schedule?", "Changing work schedule process?", "How to change work schedule?"],
-			"responses": ["To change your work schedule, discuss with your manager and update your work hours on Keka under the 'Attendance' section after approval."]
+			"patterns": ["What is the process for changing my work schedule?", "How to change work schedule?", "Work schedule change process?"],
+			"responses": ["To change your work schedule, discuss with your manager and update your work hours on Keka under the 'Attendance' section after approval.", "Discuss with your manager and update your work schedule on Keka in the 'Attendance' section after getting approval.", "After discussing with your manager, change your work hours on Keka under the 'Attendance' section."]
 		},
 		{
-			"tag": "submit_feedback",
-			"patterns": ["How do I submit feedback about the workplace?", "Submitting workplace feedback?", "Workplace feedback submission?"],
-			"responses": ["To submit feedback about the workplace, use the 'Feedback' feature on Keka. You can provide anonymous or attributed feedback."]
+			"tag": "submit_workplace_feedback",
+			"patterns": ["How do I submit feedback about the workplace?", "Workplace feedback submission?", "How to give feedback about the workplace?"],
+			"responses": ["To submit feedback about the workplace, use the 'Feedback' feature on Keka. You can provide anonymous or attributed feedback.", "Submit workplace feedback through the 'Feedback' feature on Keka, either anonymously or with your name.", "Use Keka's 'Feedback' feature to provide workplace feedback, which can be anonymous or attributed."]
 		},
 		{
-			"tag": "holiday_calendar",
-			"patterns": ["Where can I find the company holiday calendar?", "Company holiday calendar location?", "Accessing holiday calendar?"],
-			"responses": ["The company holiday calendar is available on Keka under the 'Calendar' section. It lists all the official holidays for the year."]
+			"tag": "payslip_query",
+			"patterns": ["Hi, I have a question about my payslip", "Payslip question?", "I need help with my payslip"],
+			"responses": ["I'd be happy to help with that. Could you please specify what you would like to know about your payslip?", "Sure, what specific information do you need about your payslip?", "I'm here to help. Please provide more details about your payslip question."]
 		},
 		{
-			"tag": "track_project_hours",
-			"patterns": ["How do I track my project hours?", "Project hours tracking?", "Logging project hours?"],
-			"responses": ["You can track your project hours on Keka by going to the 'Timesheet' section and logging your hours worked on each project."]
-		},
-		{
-			"tag": "technical_issues_keka",
-			"patterns": ["What should I do if I experience technical issues with Keka?", "Keka technical issues?", "Reporting Keka issues?"],
-			"responses": ["If you experience technical issues with Keka, please contact the IT support team at contact@pursuitsoftware.biz or call 03323575777 for assistance."]
-		},
-		{
-			"tag": "tax_withholding",
-			"patterns": ["How do I update my tax withholding information?", "Updating tax withholding?", "Tax withholding information update?"],
-			"responses": ["To update your tax withholding information, log into Keka and navigate to the 'Payroll' section where you can update your tax details."]
-		},
-		{
-			"tag": "career_development",
-			"patterns": ["What are the options for career development within the company?", "Career development opportunities?", "Internal career development options?"],
+			"tag": "payslip_access_issue",
+			"patterns": ["I can't access my latest payslip", "Unable to view latest payslip?", "Access issue with latest payslip"],
 			"responses": [
-				"Career development options within the company are detailed on Keka under the 'Career Development' section. This includes mentorship programs, training courses, and promotion pathways."
+				"I see. Let's resolve this. Please follow these steps to access your payslip: 1. Log in to the https://pursuit.keka.com portal using your credentials. 2. Navigate to the My Finances section. 3. Select My Pay section. 4. Select Pay Slips section. 5. Select the relevant month and year to view or download your payslip.",
+				"Please follow these steps to access your latest payslip: 1. Log in to the https://pursuit.keka.com portal. 2. Go to the My Finances section. 3. Select My Pay. 4. Click on Pay Slips. 5. Choose the month and year to view or download.",
+				"To access your latest payslip, try these steps: 1. Log in to https://pursuit.keka.com. 2. Go to My Finances. 3. Select My Pay. 4. Click Pay Slips. 5. Choose the relevant month and year."
 			]
 		},
 		{
-			"tag": "technical_issues_workstation",
-			"patterns": ["How do I report a technical issue with my workstation?", "Workstation technical issues?", "Reporting workstation issues?"],
-			"responses": ["To report a technical issue with your workstation, log a ticket through the 'Helpdesk' section on Keka or contact the IT support team directly."]
+			"tag": "payslip_access_denied",
+			"patterns": ["I'm getting an error message that says Access Denied", "Payslip access denied error?", "Error message: Access Denied when accessing payslip"],
+			"responses": [
+				"Thank you for the information. This might be due to permission settings or a system issue. Let's try these steps: 1. Ensure you are using the correct login credentials. 2. Clear your browser cache and cookies, then try logging in again. 3. If the issue persists, please contact the tech support team at techsupport@pursuitsoftware.com",
+				"This could be a permission or system issue. Try these steps: 1. Check your login credentials. 2. Clear your browser cache and cookies, then log in again. 3. Contact tech support at techsupport@pursuitsoftware.com if the issue continues.",
+				"It seems like a permission or system issue. Try the following: 1. Verify your login credentials. 2. Clear your browser's cache and cookies and log in again. 3. If the problem persists, contact tech support at techsupport@pursuitsoftware.com"
+			]
 		},
 		{
-			"tag": "resignation",
-			"patterns": ["What is the process for resigning from the company?", "Resignation process?", "How to resign from the company?"],
-			"responses": ["To resign from the company, submit your resignation letter through Keka under the 'Resignation' section. Follow the outlined steps for a smooth transition."]
+			"tag": "download_payslip",
+			"patterns": ["How can I download my past 6 months Payslip?", "Download past 6 months payslip?", "Get payslips for the past 6 months"],
+			"responses": [
+				"Please follow these steps to download your payslip: 1. Log in to the https://pursuit.keka.com portal using your credentials. 2. Navigate to the My Finances section. 3. Select My Pay section. 4. Select Pay Slips section. 5. Select the relevant month and year to view or download your payslip.",
+				"To download your past 6 months payslip: 1. Log in to https://pursuit.keka.com. 2. Go to My Finances. 3. Click on My Pay. 4. Select Pay Slips. 5. Choose the months and years you need to view or download.",
+				"Follow these steps to get your past 6 months payslips: 1. Log in to https://pursuit.keka.com. 2. Navigate to My Finances. 3. Select My Pay. 4. Click on Pay Slips. 5. Choose the relevant months and years."
+			]
+		},
+		{
+			"tag": "holiday_calendar",
+			"patterns": ["Where can I find the company holiday calendar?", "Company holiday calendar location?", "Holiday calendar details?"],
+			"responses": ["The company holiday calendar is available on Keka under the 'Calendar' section. It lists all the official holidays for the year.", "Check the 'Calendar' section on Keka for the company holiday calendar, listing all official holidays.", "The company holiday calendar can be found on Keka under the 'Calendar' section."]
+		},
+		{
+			"tag": "track_project_hours",
+			"patterns": ["How do I track my project hours?", "Project hours tracking?", "Track hours worked on projects"],
+			"responses": ["You can track your project hours on Keka by going to the 'Timesheet' section and logging your hours worked on each project.", "Track your project hours on Keka in the 'Timesheet' section by logging your hours worked.", "Log your project hours in the 'Timesheet' section on Keka."]
+		},
+		{
+			"tag": "technical_issues_keka",
+			"patterns": ["What should I do if I experience technical issues with Keka?", "Keka technical issues help?", "Technical problems with Keka"],
+			"responses": ["If you experience technical issues with Keka, please contact the IT support team at contact@pursuitsoftware.biz or call 03323575777 for assistance.", "For technical issues with Keka, contact the IT support team at contact@pursuitsoftware.biz or call 03323575777.", "Contact the IT support team at contact@pursuitsoftware.biz or call 03323575777 if you experience technical issues with Keka."]
+		},
+		{
+			"tag": "update_tax_info",
+			"patterns": ["How do I update my tax withholding information?", "Update tax withholding details?", "Change tax information"],
+			"responses": ["To update your tax withholding information, log into Keka and navigate to the 'Payroll' section where you can update your tax details.", "Update your tax withholding information in the 'Payroll' section on Keka.", "Log into Keka and go to the 'Payroll' section to update your tax withholding information."]
+		},
+		{
+			"tag": "career_development",
+			"patterns": ["What are the options for career development within the company?", "Career development opportunities?", "Company career development options"],
+			"responses": ["Career development options within the company are detailed on Keka under the 'Career Development' section. This includes mentorship programs, training courses, and promotion pathways.", "Check the 'Career Development' section on Keka for information on mentorship programs, training courses, and promotion pathways.", "Career development opportunities, including mentorship and training, are available on Keka in the 'Career Development' section."]
+		},
+		{
+			"tag": "report_workstation_issue",
+			"patterns": ["How do I report a technical issue with my workstation?", "Report workstation technical issue?", "Workstation problem reporting"],
+			"responses": ["To report a technical issue with your workstation, log a ticket through the 'Helpdesk' section on Keka or contact the IT support team directly.", "Report workstation issues by logging a ticket in the 'Helpdesk' section on Keka or by contacting the IT support team.", "Use the 'Helpdesk' section on Keka or contact IT support to report technical issues with your workstation."]
+		},
+		{
+			"tag": "resignation_process",
+			"patterns": ["What is the process for resigning from the company?", "How to resign from the company?", "Company resignation procedure?"],
+			"responses": ["To resign from the company, submit your resignation letter through Keka under the 'Resignation' section. Follow the outlined steps for a smooth transition.", "Submit your resignation letter on Keka in the 'Resignation' section and follow the outlined steps.", "Resign from the company by submitting your resignation letter through the 'Resignation' section on Keka and follow the given steps."]
 		},
 		{
 			"tag": "certificate_of_employment",
-			"patterns": ["How do I get a certificate of employment?", "Requesting certificate of employment?", "Certificate of employment process?"],
-			"responses": ["To request a certificate of employment, log into Keka, navigate to the 'Requests' section, and fill out the 'Certificate of Employment' request form."]
+			"patterns": ["How do I get a certificate of employment?", "Request certificate of employment?", "Certificate of employment process?"],
+			"responses": ["To request a certificate of employment, log into Keka, navigate to the 'Requests' section, and fill out the 'Certificate of Employment' request form.", "Request a certificate of employment on Keka in the 'Requests' section by filling out the form.", "Use the 'Requests' section on Keka to fill out and submit a certificate of employment request form."]
 		},
 		{
 			"tag": "training_history",
-			"patterns": ["How do I access my training history?", "Training history access?", "Viewing training history?"],
-			"responses": ["You can access your training history on Keka under the 'Learning and Development' section. It will list all the courses and programs you have completed."]
+			"patterns": ["How do I access my training history?", "Training history access?", "Where to find training history?"],
+			"responses": ["You can access your training history on Keka under the 'Learning and Development' section. It will list all the courses and programs you have completed.", "Check the 'Learning and Development' section on Keka for your training history and completed courses.", "Your training history is available on Keka in the 'Learning and Development' section."]
 		},
 		{
 			"tag": "parking_permit",
-			"patterns": ["What is the process for getting a parking permit?", "Requesting parking permit?", "Parking permit application process?"],
-			"responses": ["To get a parking permit, fill out the parking permit request form available on Keka under the 'Facilities' section and submit it for approval."]
+			"patterns": ["What is the process for getting a parking permit?", "Request parking permit?", "How to get a parking permit?"],
+			"responses": ["To get a parking permit, fill out the parking permit request form available on Keka under the 'Facilities' section and submit it for approval.", "Request a parking permit on Keka in the 'Facilities' section by completing the form and submitting it.", "Use the 'Facilities' section on Keka to fill out and submit the parking permit request form."]
 		},
 		{
 			"tag": "lost_id_card",
-			"patterns": ["What should I do if I lose my employee ID card?", "Lost employee ID card?", "Reporting lost ID card?"],
-			"responses": ["If you lose your employee ID card, report it immediately on Keka under the 'Security' section and request a replacement."]
+			"patterns": ["What should I do if I lose my employee ID card?", "Lost employee ID card?", "Lost ID card procedure?"],
+			"responses": ["If you lose your employee ID card, report it immediately on Keka under the 'Security' section and request a replacement.", "Report a lost employee ID card on Keka in the 'Security' section and request a replacement.", "Use the 'Security' section on Keka to report your lost ID card and request a new one."]
+		},
+		{
+			"tag": "request_work_from_home",
+			"patterns": ["I would like to request to work from home for a week.", "Work from home request?", "Requesting to work from home for a week"],
+			"responses": ["I can help with that. Could you please provide the dates you are requesting to work from home?", "Please provide the specific dates you are requesting to work from home.", "Sure, could you please specify the dates for your work from home request?"]
+		},
+		{
+			"tag": "work_from_home_dates",
+			"patterns": ["I would like to work from home from July 5th to July 9th.", "Request to work from home from July 5th to July 9th", "Work from home request for July 5th to July 9th"],
+			"responses": ["Got it. Could you please provide the reason for your work from home request?", "Thank you. Please provide the reason for your work from home request.", "Understood. Can you share the reason for your work from home request?"]
+		},
+		{
+			"tag": "work_from_home_reason",
+			"patterns": ["I need to take care of a family member who is unwell.", "Taking care of an unwell family member", "Family member unwell, need to work from home"],
+			"responses": ["Thank you. I will now submit your work from home request for the specified dates. You will receive an email confirmation once the request is processed.", "Got it. I will submit your work from home request. You'll receive a confirmation email once it's processed.", "Understood. I'll submit your work from home request and you will receive a confirmation email once it's approved."]
+		},
+		{
+			"tag": "IT_support",
+			"patterns": ["How do I contact IT support?", "IT support contact information?", "Who to contact for IT issues?"],
+			"responses": ["For IT support, please contact the IT support team at contact@pursuitsoftware.biz or call 03323575777.", "You can reach IT support by emailing contact@pursuitsoftware.biz or calling 03323575777.", "Contact IT support at contact@pursuitsoftware.biz or 03323575777 for assistance with IT issues."]
+		},
+		{
+			"tag": "office_supplies",
+			"patterns": ["How do I request office supplies?", "Office supplies request process?", "Where to request office supplies?"],
+			"responses": ["To request office supplies, submit a request through the 'Facilities' section on Keka.", "Request office supplies in the 'Facilities' section on Keka.", "Submit your office supplies request on Keka under the 'Facilities' section."]
+		},
+		{
+			"tag": "meeting_room_booking",
+			"patterns": ["How do I book a meeting room?", "Meeting room booking process?", "Where to book a meeting room?"],
+			"responses": ["Book a meeting room through the 'Facilities' section on Keka by selecting an available room and time.", "Use the 'Facilities' section on Keka to book a meeting room.", "Meeting rooms can be booked through the 'Facilities' section on Keka."]
+		},
+		{
+			"tag": "employee_benefits",
+			"patterns": ["What are the employee benefits?", "Employee benefits details?", "What benefits does the company offer?"],
+			"responses": ["The company's employee benefits are detailed on Keka under the 'Benefits' section.", "For details on employee benefits, please refer to the 'Benefits' section on Keka.", "Check the 'Benefits' section on Keka for information about the company's employee benefits."]
 		}
 	]
 }

@@ -1,4 +1,6 @@
 Query,Response
+"What is your name?","Hi, I am your HR chatbot, my name is Synthia. My job is to resolve your queries, regarding human resource."
+"What do you do?","My job is to resolve your queries, regarding human resource."
 "What are the office hours?","Our office hours are from 9:30 AM to 6:30 PM, Monday through Friday."
 "How do I find the employee handbook?","You can find the employee handbook on the company intranet under the HR section."
 "How many vacation days do I have left?","You can check your remaining vacation days on the HR portal under 'My Leave Balance'. If you need further assistance, please contact HR."
@@ -54,4 +56,3 @@ Query,Response
 "I would like to request to work from home for a week.","I can help with that. Could you please provide the dates you are requesting to work from home?"
 "I would like to work from home from July 5th to July 9th.","Got it. Could you please provide the reason for your work from home request?"
 "I need to take care of a family member who is unwell.","Thank you. I will now submit your work from home request for the specified dates. You will receive an email confirmation once the request is processed."
-
