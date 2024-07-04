@@ -8,11 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const getStartedButton = document.querySelector('.get-started-button');
     getStartedButton.addEventListener('click', () => {
-<<<<<<< HEAD
         window.location.href = 'signin.html';
-=======
-        window.location.href = 'signup.html';
->>>>>>> 09c47a05d8aa4490e2073b5abd3a43e946d4e9af
     });
 });
 

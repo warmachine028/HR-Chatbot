@@ -1,11 +1,13 @@
 import pickle
 from flask import Flask, make_response, request, jsonify
+from flask_cors import CORS
 
 MODEL_PATH = "../python/data/model.pkl"
 
 model = pickle.load(open(MODEL_PATH, "rb"))
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/")
 def home():
