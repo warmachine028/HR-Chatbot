@@ -8,12 +8,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const getStartedButton = document.querySelector('.get-started-button');
     getStartedButton.addEventListener('click', () => {
+<<<<<<< HEAD
+        window.location.href = 'signin.html';
+=======
         window.location.href = 'signup.html';
+>>>>>>> 09c47a05d8aa4490e2073b5abd3a43e946d4e9af
     });
 });
 
 
-const subtitleText = "I am your Virtual HR, I am here to assist youbv vb,b,,ks,c jzckSMZCBJbJ<C ,jszbc,zshv jskcbjkscbjbjkbcklbkclnkcnknc";
+const subtitleText = "I am your HR Asistant, I am here to assist you. If you have any query feel free to ask!";
     const subtitleElement = document.getElementById('subtitle');
     let index = 0;
 
