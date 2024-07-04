@@ -8,28 +8,21 @@ document.getElementById('userInput').addEventListener('keypress', function (e) {
 async function sendMessage() {
     const userInput = document.getElementById('userInput');
     const message = userInput.value.trim();
-    if (message === '') return;
-    else if (message !== "") {
+    if (message === '') {
+        return;
+    }
+    if (message !== "") {
         addMessageToChat('User', message);
         userInput.value = '';
     }
-    // Send message to backend and get response
-    const response = await fetch(`https://hr-chatbot-xddc.onrender.com/chat?query=${message}`, {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    })
-    .then(response => console.log(response.json()))
-    .then(data => {
-        addMessageToChat('Bot', data.response);
-    })
-    .catch(error => {
+    try {
+        const response = await fetch(`https://hr-chatbot-xddc.onrender.com/chat?query=${message}`)
+        const result = await response.json()
+        addMessageToChat('Bot', result.response);
+    } catch (error) {
         console.error('Error:', error);
         addMessageToChat('Bot', 'There was an error processing your request.');
-    });
-    
-   
+    }
 }
 //Required to connect hr to user
 // socket.on("connect", () => {
