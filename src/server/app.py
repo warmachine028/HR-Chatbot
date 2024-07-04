@@ -8,6 +8,7 @@ model = pickle.load(open(MODEL_PATH, "rb"))
 
 app = Flask(__name__)
 CORS(app)
+
 @app.route("/")
 def home():
     return "Hello from Chatbot Flask!"
