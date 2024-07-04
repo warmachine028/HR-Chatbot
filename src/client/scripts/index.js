@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const getStartedButton = document.querySelector('.get-started-button');
     getStartedButton.addEventListener('click', () => {
-        window.location.href = 'signup.html';
+        window.location.href = 'signin.html';
     });
 });
 
