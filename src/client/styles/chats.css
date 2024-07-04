@@ -93,12 +93,12 @@ input:checked + .slider:before {
 }
 
 main {
-    flex: 1;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
     overflow: hidden; /* Prevent content overflow */
+    flex-direction: column;
 }
 
 .chat-window {
@@ -106,6 +106,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: calc(100vh - 160px); /* Adjust height to fit within the viewport */
 }
 
 .chat-log {
@@ -120,6 +121,7 @@ main {
 .user-input {
     display: flex;
     align-items: center;
+    padding: 10px 0; /* Add padding to ensure input is above the footer */
 }
 
 .user-input input {
@@ -128,6 +130,7 @@ main {
     border: none;
     border-radius: 5px;
     margin-right: 10px;
+    /* display: inline-block; */
 }
 
 .user-input button {
@@ -141,15 +144,23 @@ main {
 
 .faq {
     width: 35%;
+    height: calc(100vh - 160px); /* Adjust height to fit within the viewport */
 }
 
 .faq h2 {
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .faq ul {
-    list-style: none;
+    list-style:circle;
     padding: 0;
+    margin-left: 100px;
+    /* justify-content: center;
+    align-items: center; */
+
 }
 
 .faq li {
@@ -169,6 +180,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column; /* Arrange links vertically */
+    margin-top: 10px; /* Add margin to separate footer from main content */
 }
 
 footer p {
@@ -195,5 +208,24 @@ header.dark-mode {
 }
 .footer-link {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+#nextPg {
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.top-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.bottom-container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }

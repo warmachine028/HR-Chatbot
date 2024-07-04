@@ -5,34 +5,31 @@ document.getElementById('userInput').addEventListener('keypress', function (e) {
         sendMessage();
     }
 });
-function sendMessage() {
+async function sendMessage() {
     const userInput = document.getElementById('userInput');
     const message = userInput.value.trim();
     if (message === '') return;
     else if (message !== "") {
-        //Required to connect hr to user
-        // socket.emit("message", message);
         addMessageToChat('User', message);
         userInput.value = '';
     }
- 
     // Send message to backend and get response
-    fetch('/post', {
-        method: 'POST',
+    const response = await fetch(`https://hr-chatbot-xddc.onrender.com/chat?query=${message}`, {
+        method: 'GET',
         headers: {
             'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ message: message })
+        }
     })
-    .then(response => response.json())
+    .then(response => console.log(response.json()))
     .then(data => {
-        addMessageToChat('Bot', data);
+        addMessageToChat('Bot', data.response);
     })
     .catch(error => {
         console.error('Error:', error);
         addMessageToChat('Bot', 'There was an error processing your request.');
     });
     
+   
 }
 //Required to connect hr to user
 // socket.on("connect", () => {

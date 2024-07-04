@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const getStartedButton = document.querySelector('.get-started-button');
     getStartedButton.addEventListener('click', () => {
-        window.location.href = 'registration.html';
+        window.location.href = 'signin.html';
     });
 });
 
 
-const subtitleText = "I am your Virtual HR, I am here to assist youbv vb,b,,ks,c jzckSMZCBJbJ<C ,jszbc,zshv jskcbjkscbjbjkbcklbkclnkcnknc";
+const subtitleText = "I am your HR Asistant, I am here to assist you. If you have any query feel free to ask!";
     const subtitleElement = document.getElementById('subtitle');
     let index = 0;
 
