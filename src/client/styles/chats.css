@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in element's total width and height */
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+header img {
+    height: 40px;
+}
+
+header h1 {
+    margin: 0;
+    color: #E91E63;
+}
+
+.notifications {
+    background-color: #555;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+}
+
+.dark-mode-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+
+main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden; /* Prevent content overflow */
+    flex-direction: column;
+}
+
+.chat-window {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 160px); /* Adjust height to fit within the viewport */
+}
+
+.chat-log {
+    flex: 1;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 10px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.user-input {
+    display: flex;
+    align-items: center;
+    padding: 10px 0; /* Add padding to ensure input is above the footer */
+}
+
+.user-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    /* display: inline-block; */
+}
+
+.user-input button {
+    padding: 10px 20px;
+    background-color: #E91E63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.faq {
+    width: 35%;
+    height: calc(100vh - 160px); /* Adjust height to fit within the viewport */
+}
+
+.faq h2 {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq ul {
+    list-style:circle;
+    padding: 0;
+    margin-left: 100px;
+    /* justify-content: center;
+    align-items: center; */
+
+}
+
+.faq li {
+    margin: 10px 0;
+}
+
+.faq a {
+    color: #E91E63;
+    text-decoration: none;
+}
+
+.faq a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Arrange links vertically */
+    margin-top: 10px; /* Add margin to separate footer from main content */
+}
+
+footer p {
+    margin-right: 10px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: rgb(194, 214, 214);
+    color: white;
+}
+
+header.dark-mode {
+    background-color: rgb(194, 214, 214);
+}
+
+.chat-log.dark-mode {
+    background-color: rgb(194, 214, 214);
+}
+
+.user-input.dark-mode input {
+    background-color: rgb(194, 214, 214);
+    color: white;
+}
+.footer-link {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#nextPg {
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.top-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.bottom-container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
