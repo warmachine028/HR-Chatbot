@@ -14,6 +14,8 @@ async function sendMessage() {
     if (message !== "") {
         addMessageToChat('User', message);
         userInput.value = '';
+        let element= document.getElementsByClassName("user-input");
+        // element.innerHTML("<br>");
     }
     try {
         const response = await fetch(`https://hr-chatbot-xddc.onrender.com/chat?query=${message}`)
@@ -43,6 +45,7 @@ function addMessageToChat(sender, message) {
     const messageElement = document.createElement('div');
     messageElement.classList.add('chat-message', sender.toLowerCase());
     messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
+    messageElement.style.marginBottom = '20px';
     chatLog.appendChild(messageElement);
     chatLog.scrollTop = chatLog.scrollHeight;
 }
