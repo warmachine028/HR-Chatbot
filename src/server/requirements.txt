@@ -23,4 +23,4 @@ tbb==2021.13.0
 threadpoolctl==3.5.0
 torch==2.3.1
 typing_extensions==4.12.2
-Werkzeug==3.0.3
+Werkzeug==3.0.6
