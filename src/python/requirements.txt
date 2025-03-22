@@ -3,7 +3,7 @@ colorama==0.4.6
 filelock==3.15.4
 fsspec==2024.6.1
 intel-openmp==2021.4.0
-Jinja2==3.1.5
+Jinja2==3.1.6
 joblib==1.4.2
 MarkupSafe==2.1.5
 mkl==2021.4.0
