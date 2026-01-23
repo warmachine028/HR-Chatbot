@@ -1,7 +1,7 @@
 blinker==1.8.2
 click==8.1.7
 colorama==0.4.6
-filelock==3.20.1
+filelock==3.20.3
 Flask==3.0.3
 Flask-Cors==6.0.0
 fsspec==2024.6.1
